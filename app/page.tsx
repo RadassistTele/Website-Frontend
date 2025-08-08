@@ -9,10 +9,19 @@ const page = () => {
       
       {/* First Section with Gradient Background */}
       <section className="hero-section">
-        <div className="hero-content">
-          <h1>RadAssist Teleradiology</h1>
-          <p>Advanced AI-powered radiology solutions for healthcare professionals</p>
-          <button className="cta-button">Get Started</button>
+        <div className="hero-container">
+          <div className="hero-content">
+            <h1>RadAssist Teleradiology</h1>
+            <p>Advanced AI-powered radiology solutions for healthcare professionals</p>
+            <button className="cta-button">Get Started</button>
+          </div>
+          <div className="hero-image">
+            <img 
+              src="/ImageAssets/landingPageImage.png" 
+              alt="RadAssist Teleradiology Solutions" 
+              className="landing-image"
+            />
+          </div>
         </div>
         {/* Wavy divider */}
         <div className="wavy-divider">

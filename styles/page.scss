@@ -1,6 +1,7 @@
 // Variables
-$gradient-top: #0b1f3a;
-$gradient-bottom: #2c4a7a;
+$gradient-top: #031328;
+$gradient-middle: #00234f;
+$gradient-bottom: #0052d5;
 $white: #ffffff;
 $text-light: #ffffff;
 $text-dark: #333333;
@@ -16,18 +17,43 @@ $primary-accent: #00a8ff;
 .hero-section {
   position: relative;
   min-height: 100vh;
-  background: linear-gradient(to bottom, $gradient-top, $gradient-bottom);
+//   background: linear-gradient(to bottom right, $gradient-top, $gradient-bottom);
+background: linear-gradient(
+  to bottom right,              // bottom-right direction
+  $gradient-top 0%,   // start color
+  $gradient-middle 60%,  // keep same color until middle
+  $gradient-bottom 100% // fade to second color at bottom-right
+);
   display: flex;
   align-items: center;
   justify-content: center;
   color: $text-light;
+  padding: 0 2rem;
+  
+  .hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    max-width: 1200px;
+    width: 100%;
+    align-items: center;
+    
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      text-align: center;
+    }
+  }
   
   .hero-content {
-    text-align: center;
-    max-width: 800px;
-    padding: 0 2rem;
+    text-align: left;
     z-index: 2;
     position: relative;
+    
+    @media (max-width: 768px) {
+      text-align: center;
+      order: 2;
+    }
     
     h1 {
       font-size: 3.5rem;
@@ -66,6 +92,40 @@ $primary-accent: #00a8ff;
         background: darken($primary-accent, 10%);
         transform: translateY(-2px);
         box-shadow: 0 8px 25px rgba(0, 168, 255, 0.3);
+      }
+    }
+  }
+  
+  .hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    position: relative;
+    
+    @media (max-width: 768px) {
+      order: 1;
+      margin-bottom: 1rem;
+    }
+    
+    .landing-image {
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+      
+      &:hover {
+        transform: scale(1.02);
+      }
+      
+      @media (max-width: 768px) {
+        max-width: 300px;
+      }
+      
+      @media (max-width: 480px) {
+        max-width: 250px;
       }
     }
   }
