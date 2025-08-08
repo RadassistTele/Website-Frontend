@@ -20,7 +20,7 @@ const UnderConstruction = () => {
             <span className="title-highlight">Under Construction</span>
           </h2>
           <p className="construction-subtitle">
-            We're building something amazing for you! 🚀
+            We&apos;re building something amazing for you! 🚀
           </p>
           <div className="construction-features">
             <div className="feature-item">
