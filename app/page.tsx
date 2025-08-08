@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from './Navbar';
+import UnderConstruction from './components/UnderConstruction/UnderConstruction';
 import '../styles/page.scss';
 
 const page = () => {
@@ -71,6 +72,9 @@ const page = () => {
           </div>
         </div>
       </section>
+
+      {/* Under Construction Section */}
+      <UnderConstruction />
     </div>
   );
 };
