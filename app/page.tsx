@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import Navbar from './Navbar';
 import UnderConstruction from './components/UnderConstruction/UnderConstruction';
 import '../styles/page.scss';
@@ -17,10 +18,13 @@ const page = () => {
             <button className="cta-button">Get Started</button>
           </div>
           <div className="hero-image">
-            <img 
+            <Image 
               src="/ImageAssets/landingPageImage.png" 
               alt="RadAssist Teleradiology Solutions" 
               className="landing-image"
+              width={500}
+              height={400}
+              priority
             />
           </div>
         </div>

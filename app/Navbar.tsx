@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
+import Link from 'next/link';
 import '../styles/navbar.scss';
 
 const Navbar = () => {
@@ -19,9 +20,9 @@ const Navbar = () => {
   return (
     <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
       <div className="navbar-container">
-        <a href="/" className="navbar-logo">
+        <Link href="/" className="navbar-logo">
           RadAssist
-        </a>
+        </Link>
         
         <ul className="navbar-menu">
           <li className="navbar-item">
