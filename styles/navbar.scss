@@ -1,0 +1,104 @@
+// Variables
+$text-light: #ffffff;
+$text-dark: #333333;
+$primary-accent: #00a8ff;
+
+// Navbar styles
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 1rem 2rem;
+  transition: all 0.3s ease;
+  
+  .navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    .navbar-logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: $text-light;
+      text-decoration: none;
+      transition: color 0.3s ease;
+      
+      &:hover {
+        color: $primary-accent;
+      }
+    }
+    
+    .navbar-menu {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      gap: 2rem;
+      
+      @media (max-width: 768px) {
+        display: none; // Hide on mobile for now, can add mobile menu later
+      }
+      
+      .navbar-item {
+        .navbar-link {
+          color: $text-light;
+          text-decoration: none;
+          font-weight: 500;
+          transition: all 0.3s ease;
+          position: relative;
+          
+          &:hover {
+            color: $primary-accent;
+          }
+          
+          &::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: $primary-accent;
+            transition: width 0.3s ease;
+          }
+          
+          &:hover::after {
+            width: 100%;
+          }
+        }
+      }
+    }
+    
+    .navbar-cta {
+      background: transparent;
+      color: $text-light;
+      border: 2px solid $text-light;
+      padding: 0.5rem 1.5rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      
+      &:hover {
+        background: $text-light;
+        color: $text-dark;
+      }
+      
+      @media (max-width: 768px) {
+        padding: 0.4rem 1rem;
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+
+// Navbar with background (when scrolled)
+.navbar.scrolled {
+  background: rgba(11, 31, 58, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+}
