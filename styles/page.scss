@@ -227,6 +227,9 @@ background: linear-gradient(
 
 @media (max-width: 768px) {
   .hero-section {
+    min-height: 130vh; // Increased height for mobile to accommodate stacked layout
+    padding: 4rem 1rem 0; // Added top padding to ensure content fits
+    
     .wavy-divider {
       height: 80px;
     }
