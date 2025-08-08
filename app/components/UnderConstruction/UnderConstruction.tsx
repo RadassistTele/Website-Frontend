@@ -17,7 +17,7 @@ const UnderConstruction = () => {
         </div>
         <div className="construction-content">
           <h2 className="construction-title">
-            <span className="title-highlight">Under Construction</span>
+            <span className="title-highlight">Website Under Construction</span>
           </h2>
           <p className="construction-subtitle">
             We&apos;re building something amazing for you! 🚀
