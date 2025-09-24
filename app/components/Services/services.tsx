@@ -15,7 +15,7 @@ const serviceData = [
   {
     title: "X-Ray Review",
     image: "/ImageAssets/serviceImages/XrayImage.jpg",
-    description: "Quick and accurate X-ray assessments by AI and experts."
+    description: "Quick and accurate X-ray assessments by experts."
   }
 ];
 
