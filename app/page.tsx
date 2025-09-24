@@ -4,6 +4,7 @@ import Navbar from './components/Navbar/Navbar';
 import UnderConstruction from './components/UnderConstruction/UnderConstruction';
 import '../styles/page.scss';
 import Services from './components/Services/services';
+import WhyChooseUs from './components/WhyChooseUs/WhyChooseUs';
 
 const page = () => {
   return (
@@ -57,7 +58,9 @@ const page = () => {
         </div>
       </section>
 
-    <Services />
+
+  <Services />
+  <WhyChooseUs />
 
       {/* Under Construction Section */}
       {/* <UnderConstruction /> */}
