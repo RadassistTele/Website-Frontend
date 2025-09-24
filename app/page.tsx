@@ -60,7 +60,7 @@ const page = () => {
     <Services />
 
       {/* Under Construction Section */}
-      <UnderConstruction />
+      {/* <UnderConstruction /> */}
     </div>
   );
 };
