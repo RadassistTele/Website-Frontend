@@ -1,8 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
-import Navbar from './Navbar';
+import Navbar from './components/Navbar/Navbar';
 import UnderConstruction from './components/UnderConstruction/UnderConstruction';
 import '../styles/page.scss';
+import Services from './components/Services/services';
 
 const page = () => {
   return (
@@ -56,26 +57,7 @@ const page = () => {
         </div>
       </section>
 
-      {/* Second Section with White Background */}
-      <section className="services-section">
-        <div className="services-content">
-          <h2>Our Services</h2>
-          <div className="services-grid">
-            <div className="service-card">
-              <h3>AI Diagnosis</h3>
-              <p>Advanced AI algorithms for accurate medical imaging analysis</p>
-            </div>
-            <div className="service-card">
-              <h3>Remote Consultation</h3>
-              <p>Connect with radiologists anywhere, anytime for expert opinions</p>
-            </div>
-            <div className="service-card">
-              <h3>Report Generation</h3>
-              <p>Automated report generation with comprehensive analysis</p>
-            </div>
-          </div>
-        </div>
-      </section>
+    <Services />
 
       {/* Under Construction Section */}
       <UnderConstruction />
