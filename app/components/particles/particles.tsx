@@ -69,7 +69,7 @@ const ParticlesComponent = (props: ParticlesComponentProps) => {
           direction: "none" as const,
           enable: true,
           outModes: {
-            default: "split" as const,
+            default: "bounce" as const,
           },
           random: true,
           speed: 1,
