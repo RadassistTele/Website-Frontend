@@ -29,6 +29,7 @@ const page = () => {
                 src="/ImageAssets/landingPageImage.png" 
                 alt="RadAssist Teleradiology Solutions" 
                 className="landing-image"
+                style={{"zIndex": 40}}
                 width={500}
                 height={400}
                 priority
