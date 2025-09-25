@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Navbar from './components/Navbar/Navbar';
-import UnderConstruction from './components/UnderConstruction/UnderConstruction';
+// import UnderConstruction from './components/UnderConstruction/UnderConstruction';
 import '../styles/page.scss';
 import '../styles/particlesbg.scss';
 import Services from './components/Services/services';
