@@ -27,8 +27,8 @@ const Footer = () => {
     <footer className={styles.footer}>
       <div className={styles.footerContent}>
         <div className={styles.left}>
-          <div className={styles.logoWrap}>
-            <Image src="/ImageAssets/RadAssist Logo.png" alt="RadAssist Logo" width={60} height={60} />
+          <div className={styles.logoText}>
+            <a href="/" className={styles.radassistLogo}>RadAssist</a>
           </div>
           <div className={styles.socialLinks}>
             {socialLinks.map((link) => (
