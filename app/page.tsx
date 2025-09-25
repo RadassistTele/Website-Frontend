@@ -11,10 +11,11 @@ import ParticlesComponent from './components/particles/particles';
 const page = () => {
   return (
     <>
-      <div className="particles-bg">
+     
+      <div className="main-container">
+         <div className="particles-bg">
         <ParticlesComponent id="tsparticles-bg" />
       </div>
-      <div className="main-container">
         <Navbar />
         {/* First Section with Gradient Background */}
         <section className="hero-section">
@@ -24,12 +25,12 @@ const page = () => {
               <p>Advanced AI-powered radiology solutions for healthcare professionals</p>
               <button className="cta-button">Get Started</button>
             </div>
-            <div className="hero-image">
+            <div className="hero-image"   style={{"zIndex": 40}}>
               <Image 
                 src="/ImageAssets/landingPageImage.png" 
                 alt="RadAssist Teleradiology Solutions" 
                 className="landing-image"
-                style={{"zIndex": 40}}
+              
                 width={500}
                 height={400}
                 priority
