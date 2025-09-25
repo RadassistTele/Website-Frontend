@@ -1,5 +1,6 @@
 import React from 'react';
 import css from "@/app/components/Services/servies.module.scss";
+import Image from 'next/image';
 
 const serviceData = [
   {
@@ -26,7 +27,8 @@ const Services = () => {
       <div className={css.servicesGrid}>
         {serviceData.map((service, idx) => (
           <div className={css.serviceCard} key={idx}>
-            <img src={service.image} alt={service.title} className={css.serviceImage} />
+            {/* <img src={service.image} alt={service.title} className={css.serviceImage} /> */}
+            <Image src={service.image} alt={service.title} className={css.serviceImage} height={130} width={130}/>
             <h3>{service.title}</h3>
             <p>{service.description}</p>
           </div>

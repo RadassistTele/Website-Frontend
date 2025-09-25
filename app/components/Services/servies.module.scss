@@ -36,6 +36,7 @@
     align-items: center;
     transition: transform 0.2s, box-shadow 0.2s;
     border: none;
+    z-index: 40;
 }
 
 .serviceCard:hover {
