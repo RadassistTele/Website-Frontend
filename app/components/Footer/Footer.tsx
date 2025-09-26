@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import styles from "./Footer.module.scss";
+import Link from "next/link";
 
 const socialLinks = [
   { name: "Twitter", url: "https://twitter.com", icon: "/icons/twitter.svg" },
@@ -28,7 +29,7 @@ const Footer = () => {
       <div className={styles.footerContent}>
         <div className={styles.left}>
           <div className={styles.logoText}>
-            <a href="/" className={styles.radassistLogo}>RadAssist</a>
+            <Link href="/" className={styles.radassistLogo}>RadAssist</Link>
           </div>
           <div className={styles.socialLinks}>
             {socialLinks.map((link) => (
