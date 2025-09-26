@@ -32,7 +32,7 @@ const ParticlesComponent = (props: ParticlesComponentProps) => {
         events: {
           onClick: {
             enable: true,
-            mode: "repulse",
+            mode: "push",
           },
           onHover: {
             enable: true,
@@ -69,7 +69,7 @@ const ParticlesComponent = (props: ParticlesComponentProps) => {
           direction: "none" as const,
           enable: true,
           outModes: {
-            default: "bounce" as const,
+            default: "split" as const,
           },
           random: true,
           speed: 1,
