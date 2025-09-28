@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Navbar from "./components/Navbar/Navbar";
+import ParticlesComponent from "./components/particles/particles";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -23,9 +25,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body>
+        <Navbar />
+        <ParticlesComponent id="tsparticles" />
         {children}
       </body>
     </html>
