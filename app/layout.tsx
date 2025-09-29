@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "./components/Navbar/Navbar";
-import ParticlesComponent from "./components/particles/particles";
+// import ParticlesComponent from "./components/particles/particles";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -27,7 +27,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Navbar />
-        <ParticlesComponent id="tsparticles" />
+        {/* <ParticlesComponent id="tsparticles" /> */}
         {children}
       </body>
     </html>
